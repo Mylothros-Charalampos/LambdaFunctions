@@ -11,7 +11,7 @@ Resources:
     addNumbers:
         Type: AWS::Serverless::Function
         Properties:
-            CodeUri: add-numbers/
+            CodeUri: app/
             Handler: add.handler
             Events:
                 PostAdd:
