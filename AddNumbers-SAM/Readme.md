@@ -1,4 +1,4 @@
-## In this example a lambda function is invoked from another lambda function
+## In this example the lambda function will add 2 numbers passed with POST.
 
 ## Test
 
