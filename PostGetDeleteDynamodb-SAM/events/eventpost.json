@@ -1,0 +1,11 @@
+{
+    "pathParameters":{
+        "userid":"mylo"
+    },
+    "body":{
+        "firstName": "mylo2",
+        "lastName": "mylo22",
+        "email": "mbab1is2@fdsa.com",
+        "website": "some2.com"
+    }  
+}

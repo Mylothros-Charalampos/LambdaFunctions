@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Sample SAM Template for test-aws
+Globals:
+  Function:
+    MemorySize: 128
+    Runtime: nodejs12.x
+    Timeout: 5
+Resources:
+  Calculator:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: calculator.handler
+      Events:
+        postadd:
+          Type: Api
+          Properties:
+            Path: /calc
+            Method: post
+      CodeUri: s3://mylo-sam-test-for-my-pc/4778fcd8d803a38fa66cd880f3cfc2fd
+  CalculatorAdd:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: calculatorAdd.handler
+      Events:
+        postaddd:
+          Type: Api
+          Properties:
+            Path: /calcu
+            Method: post
+      CodeUri: s3://mylo-sam-test-for-my-pc/4778fcd8d803a38fa66cd880f3cfc2fd

@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Globals:
+    Function:
+        MemorySize: 128
+        Runtime: nodejs12.x
+        Timeout: 5
+
+Resources:
+    addNumbers:
+        Type: AWS::Serverless::Function
+        Properties:
+            CodeUri: add-numbers/
+            Handler: add.handler
+            Events:
+                PostAdd:
+                    Type: Api
+                    Properties:
+                        Path: /add
+                        Method: post
+
+  
+
