@@ -26,4 +26,6 @@ After opening Postman use the given url from API Gateway (<given>.amazonaws.com/
 Press send and as a response you should have:
 ```{"message": "Data inserted successfully"}```
 
+Moreover a configuration file has been included in .vscode so you can start the debugger and add breakpoints to study and debug the code.
+
 The symbols < and > should not be included in the command.
