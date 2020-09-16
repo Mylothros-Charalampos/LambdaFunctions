@@ -1,12 +1,11 @@
-## In this example the lambda function will add 2 numbers passed with POST.
+## In this example a lambda function is invoked from another lambda function
 
 ## Test
 
 To test the following example locally start the api with `sam local start-api` and use the following command in bash:
 
-```curl -d '{"number":5}' -H "Content-Type: application/json" -X POST http://localhost:3000/calcu``` for calculatorAdd lambdafunction and
+```curl -d '{"num1":5,"num2":6}' -H "Content-Type: application/json" -X POST http://localhost:3000/add```
 
-```curl -d '{"operation": "add","operator1":6,"operator2":7}' -H "Content-Type: application/json" -X POST http://localhost:3000/calc``` for calculator lambdafunction
 ## Deploy with SAM
 
 To package and deploy the project in your aws account you have to start with the command `aws configure` to configure your keys.
