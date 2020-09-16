@@ -4,7 +4,7 @@
 
 To test the following example deploy it and use postman as a pinpoint underneath, so you can see the changes in the dynamoDB server in realtime:
 
-## Deploy with SAM
+## Deploy with Serverless
 
 To package and deploy the project in your aws account you have to start with the command ```aws configure``` to configure your keys.
 
