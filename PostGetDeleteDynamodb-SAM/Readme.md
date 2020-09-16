@@ -1,4 +1,4 @@
-## In this example the lambda function will add 2 numbers passed with POST.
+## In this example a table is created in DynamoDB and you can get, add info, or delete the table.
 
 ## Test
 
