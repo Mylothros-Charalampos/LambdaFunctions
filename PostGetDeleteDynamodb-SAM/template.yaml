@@ -25,7 +25,7 @@ Resources:
   GetUser:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: post-get-delete/
+      CodeUri: app/
       Handler: get.handler
       Policies: AmazonDynamoDBReadOnlyAccess
       Events:
@@ -38,7 +38,7 @@ Resources:
   PostUser:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: post-get-delete/
+      CodeUri: app/
       Handler: post.handler
       Policies: AmazonDynamoDBFullAccess
       Events:
@@ -51,7 +51,7 @@ Resources:
   DeleteUser:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: post-get-delete/
+      CodeUri: app/
       Handler: delete.handler
       Policies: AmazonDynamoDBFullAccess
       Events:
