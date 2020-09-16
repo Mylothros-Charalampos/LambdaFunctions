@@ -24,4 +24,6 @@ After that you can package and deploy with the following commands:
 
 After deploying you can use Postman to check everything is working as it should be. You can find the url in API Gateway after deploying your stage.
 
+Moreover a configuration file has been included in .vscode so you can start the debugger and add breakpoints to study and debug the code.
+
 The symbols < and > should not be included in the command.
