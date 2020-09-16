@@ -1,0 +1,12 @@
+{
+  "name": "AddNumbers-SAM",
+  "version": "1.0.0",
+  "description": "To test the following example locally start the api with `sam local start-api` and use the following command in bash:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
