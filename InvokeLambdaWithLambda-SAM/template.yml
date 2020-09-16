@@ -12,7 +12,7 @@ Resources:
   Calculator:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: calculate/
+      CodeUri: app/
       Handler: calculator.handler
       Events:
         postadd:
@@ -24,7 +24,7 @@ Resources:
   CalculatorAdd:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: calculate/
+      CodeUri: app/
       Handler: calculatorAdd.handler
       Events:
         postaddd:
