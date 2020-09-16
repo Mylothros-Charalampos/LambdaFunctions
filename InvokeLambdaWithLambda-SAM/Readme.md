@@ -4,8 +4,9 @@
 
 To test the following example locally start the api with `sam local start-api` and use the following command in bash:
 
-```curl -d '{"operation":"add","operator1":6,"operator2":7}' -H "Content-Type: application/json" -X POST http://localhost:3000/calc``` for Calculator lambdafunction and
-```curl -d '{"number":5}' -H "Content-Type: application/json" -X POST http://localhost:3000/calcu```
+```curl -d '{"operation":"add","operator1":6,"operator2":7}' -H "Content-Type: application/json" -X POST http://localhost:3000/calc``` for calculator lambdafunction and
+
+```curl -d '{"number":5}' -H "Content-Type: application/json" -X POST http://localhost:3000/calcu``` for calculatorAdd lambdafunction.
 
 ## Deploy with SAM
 
