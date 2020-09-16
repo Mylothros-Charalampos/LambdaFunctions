@@ -21,16 +21,16 @@ After that you can package and deploy with the following commands:
 After deploying you can use Postman to check everything is working as it should be. You can find the url in API Gateway after deploying your stage.
 
 After opening Postman use the given url from API Gateway (<given>.amazonaws.com/Stage/) add at the end of the url user/example choose as method POST and in the section of body insert the following:
-```{
+{
     "firstName": "name",
     "lastName": "lastname",
     "email": "youremail@this.com",
     "website": "www.yourwebsite.com"
-}```
+}
 
 Press send and as a response you should have:
-```{
+{
     "message": "Data inserted successfully"
- }```
+}
 
 The symbols < and > should not be included in the command.
