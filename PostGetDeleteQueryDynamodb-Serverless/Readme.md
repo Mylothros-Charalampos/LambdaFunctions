@@ -25,4 +25,6 @@ Press send and as a response you should have:
 You can check locally with Postman, by installing ```npm install --save-dev serverless-offline``` and using the command:
 ```serverless offline```
 
+Moreover a configuration file has been included in .vscode so you can start the debugger and add breakpoints to study and debug the code.
+
 The symbols < and > should not be included in the command.
