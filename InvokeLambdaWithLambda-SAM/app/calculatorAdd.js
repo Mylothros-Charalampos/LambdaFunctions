@@ -5,21 +5,22 @@ var lambda = new AWS.Lambda();
 
 exports.handler = async (event) => {
     let {number} = JSON.parse(event.body);
-    let payload = JSON.stringify({operation: "multiply",
-        input: {
-            operator1: number,
-            operator2: number
-        }
+    let payload = JSON.stringify(
+    {
+        operation : "add",
+        operator1 : number,
+        operator2 : number
     });
     
     let params = {
-        FunctionName: "Calculator",
+        FunctionName: "arn of lambda function after you deployed",
         InvocationType: "RequestResponse", //synchronous response
         Payload: payload
     };
-   
+
+
    let data = await lambda.invoke(params).promise();
-   
+
    let result = JSON.parse(data.Payload);
    let response2 = result.body;
    var response = {

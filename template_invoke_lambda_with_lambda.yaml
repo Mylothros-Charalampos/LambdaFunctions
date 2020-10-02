@@ -9,10 +9,10 @@ Globals:
     Timeout: 5
 
 Resources:
-  Calculator:
+  CalculatorInvoked:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: app/
+      CodeUri: InvokeLambdaWithLambda-SAM/app/
       Handler: calculator.handler
       Events:
         postadd:
@@ -21,10 +21,10 @@ Resources:
             Path: /calc
             Method: post
 
-  CalculatorAdd:
+  CalculatorInvokeCal:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: app/
+      CodeUri: InvokeLambdaWithLambda-SAM/app/
       Handler: calculatorAdd.handler
       Events:
         postaddd:

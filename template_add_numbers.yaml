@@ -6,12 +6,11 @@ Globals:
         MemorySize: 128
         Runtime: nodejs12.x
         Timeout: 5
-
 Resources:
     addNumbers:
         Type: AWS::Serverless::Function
         Properties:
-            CodeUri: app/
+            CodeUri: AddNumbers-SAM/app/
             Handler: add.handler
             Events:
                 PostAdd:
@@ -19,6 +18,7 @@ Resources:
                     Properties:
                         Path: /add
                         Method: post
+
 
   
 

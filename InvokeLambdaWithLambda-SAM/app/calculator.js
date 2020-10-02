@@ -1,7 +1,8 @@
 
 exports.handler = async (event) => {
    
-    let {operator1, operator2, operation} = JSON.parse(event.body);
+    let {operator1, operator2, operation} = event;
+    //let {operator1, operator2, operation} = event.body;
     let result;
 
     switch(operation)
@@ -27,6 +28,5 @@ exports.handler = async (event) => {
          body: JSON.stringify(result),
      };
      return response;
-   
  };
  

@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+      {
+        "request": "attach",
+        "name": "Attach to AddNumbers-SAM",
+        "type": "node",
+        
+        //"preLaunchTask": "Debug Stripe Lambda Function",
+        "port": 5679,
+        "address": "localhost",
+        "localRoot": "${workspaceRoot}/AddNumbers-SAM/app",
+        "remoteRoot": "/var/task",
+        "protocol": "inspector",
+        "skipFiles": [
+          "/var/runtime/node_modules/**/*.js",
+          "<node_internals>/**/*.js"
+        ],
+        "stopOnEntry": true
+      },
+      {
+        "request": "attach",
+        "name": "Attach to InvokeLambdaWithLambda-SAM",
+        "type": "node",
+        
+        //"preLaunchTask": "Debug Stripe Lambda Function",
+        "port": 5678,
+        "address": "localhost",
+        "localRoot": "${workspaceRoot}/InvokeLambdaWithLambda-SAM/app",
+        "remoteRoot": "/var/task",
+        "protocol": "inspector",
+        "skipFiles": [
+          "/var/runtime/node_modules/**/*.js",
+          "<node_internals>/**/*.js"
+        ],
+        "stopOnEntry": true
+      },
+    ]
+}
