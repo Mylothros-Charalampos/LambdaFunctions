@@ -109,7 +109,7 @@ In this example a table is created in DynamoDB and you can get, add info, query 
 
 Test
 
-To test the following example deploy it and use postman as a pinpoint underneath, so you can see the changes in the dynamoDB server in realtime:
+To test the following example deploy it and use postman as I pinpoint underneath, so you can see the changes in the dynamoDB server in realtime:
 
 Deploy with Serverless
 
@@ -132,7 +132,7 @@ Press send and as a response you should have:
 You can check locally with Postman, by installing ```npm install --save-dev serverless-offline``` and using the command:
 ```serverless offline```
 
-Moreover a configuration file has been included in .vscode so you can start the debugger and add breakpoints to study and debug the code.
+You can check the rest urls that are showed by serverless in your CLI and try all the examples the code is giving.
 
 The symbols < and > should not be included in the command.
 
